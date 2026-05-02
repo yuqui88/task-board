@@ -1,43 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>一般常識クイズ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header class="app-header">
-      <h1>一般常識クイズ</h1>
-      <div class="progress-wrap">
-        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
-        <span class="progress-label" id="progress-label">1 / 5</span>
-      </div>
-    </header>
-
-    <main>
-      <section id="quiz-screen">
-        <div class="card">
-          <p class="question-num" id="question-num">問題 1</p>
-          <p class="question-text" id="question-text"></p>
-          <ul class="choices" id="choices"></ul>
-          <div class="feedback" id="feedback" aria-live="polite"></div>
-          <button class="btn btn-next" id="btn-next" hidden>次の問題へ →</button>
-        </div>
-      </section>
-
-      <section id="result-screen" hidden>
-        <div class="card result-card">
-          <h2>結果発表</h2>
-          <p class="score-text" id="score-text"></p>
-          <p class="score-msg" id="score-msg"></p>
-          <button class="btn btn-retry" id="btn-retry">もう一度挑戦する</button>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タスクボード</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
